@@ -13,11 +13,8 @@ features <- read.table("data/features.txt")
 relevant.measurements <- grep('mean\\(|std\\(', features$V2)
 tidy.1 <- rbind(X_test[, relevant.measurements], X_train[, relevant.measurements])
 
-tidy.1.filename <- 'tidy.1.txt'
-sink(tidy.1.filename)
+sink('data/tidy.1.txt')
 print(tidy.1)
-sink()
-unlink(tidy.1.filename)
 
 #Uses descriptive activity names to name the activities in the data set
 #Appropriately labels the data set with descriptive activity names.
@@ -50,8 +47,5 @@ tidy.2 <- data.frame(subject1=tidy.2.tmp.1
                    , subject6=tidy.2.tmp.6)
 colnames(tidy.2) <- activity_labels[,2]
 
-tidy.2.filename <- 'tidy.2.txt'
-sink(tidy.2.filename)
-print(tidy.2)
-sink()
-unlink(tidy.2.filename)
+sink('data/tidy.2.txt')
+tidy.2
