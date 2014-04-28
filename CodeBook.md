@@ -36,7 +36,8 @@ This solution is the most simple. It uses the `reshape` package to call `aggrega
 ```
 indexed.data <- data.frame(cbind(subject, activity, tidy.measurements))
 tidy.data.grouped <- aggregate(indexed.data, by=list(activity, subject), FUN=mean)
-``
+```
+
 The data set isn't highly structured, but for this assignment it is the best solution IMO.
 
 ```
