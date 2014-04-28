@@ -5,7 +5,14 @@ This package contains files extracted from the UCI HAR Dataset and saved in the 
 
 For details on the raw dataset, visit their [website](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-There is one script `run_analysis.R` which loads the raw data, performs transformations to tidy the data, and saves the output in the data folder as `tidy.1.txt` and `tidy.2.txt`. The code book describing the variables, data, and transformations is available [CodeBook.md](./CodeBook.md).
+There is one script `run_analysis.R` which loads the raw data, performs transformations to tidy the data, and saves the output in the data folder. There are several different data formats saved as:
+
+* tidy.data.activities.txt _(incomplete)_
+* tidy.data.grouped.txt
+* tidy.data.melted.txt
+* tidy.data.nested.txt
+
+The code book describing the variables, data, and transformations is available [CodeBook.md](./CodeBook.md).
 
 
 ## Instructions
